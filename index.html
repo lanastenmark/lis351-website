@@ -16,16 +16,18 @@ STEP 1: Add the required HTML5 skeleton
   </head>
 
   <body>
-    <header>
-        <h2>The Hamptons Guide</h2>
-          <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Map</a></li>
-              </ul>
+    <header class="site-header">
+        <div class="header-inner container">
+        <h2 class="brand">The Hamptons Guide<span class="dot">.</span></h2>
+          <nav class="site-nav">
+            
+               <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Map</a>
+             
           </nav>
+          </div>
     </header>
 
 
@@ -33,85 +35,112 @@ STEP 1: Add the required HTML5 skeleton
     STEP 3: Hero section + “Get Started button” as a link
     ========================================================= -->
     <main>
-        <section>
-          <h1>The Hamptons, But Actually Helpful</h1>
-            <p>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>The Hamptons, But Actually Helpful</h1>
+            <p class="hero-subhead">
               A local guide to beaches, restaurants, and the perfect weekend getaway. 
             </p>
-
-            <img src="images/hero.jpg" alt="Wide sandy beach in the dunes" width="500" height="300">
-           <p><a href="#">Get Started</a></p>
-
+           <p><a href="#" class="btn btn-dark">Get Started</a> <a href="#" class="btn btn-outline">Learn More</a></p>
+            
+          </div>
         </section>
 
     <!-- =========================================================
     STEP 4: Features section (3 blocks) + featured content section
     ========================================================= -->
-        <section>
-          <h2>Explore the Hamptons</h2>
-            <p>
-              Here are three things you need to know before planning your trip.
-            </p>
+        <section class="features">
+          <div class="container">
+          <h2 class="section-title">Explore the Hamptons</h2>
+            <p class="section-lede">Here are three things you need to know before planning your trip.</p>
+            <div class="features-grid">
 
+          <div class="feature"> 
           <h3>Where to Stay</h3>
             <img src="images/bed.svg" alt="Bed Icon" width="100" height="100">
-            <p>A breakdown of the best areas to stay in the Hamptons, including Montauk, East Hampton, and Southampton, depending on budget and vibe.</p>
+            <p>A breakdown of the best areas to stay in the Hamptons, including Montauk, East Hampton, and Amagansett, depending on budget and vibe.</p>
+          </div>
 
+          <div class="feature">
           <h3>Where to Eat</h3>
             <img src="images/bowl-food.svg" alt="Bowl of Food Icon" width="100" height="100">
             <p>A curated list of favorite local restaurants and cafes, including casual lunch spots and popular dinner reservations.</p>
+          </div>
 
-          <h3>What to Do</h3>
+           <div class="feature"> 
+            <h3>What to Do</h3>
             <img src="images/map-pin.svg" alt="Map Pin Icon" width="100" height="100">
             <p>Recommendations for beach days, biking, shopping in town, sunset spots, and nightlife.</p>
+          </div>
 
+         </div> 
+         </div>
         </section>
 
-        <section>
-          <h2>My Ideal 48-Hour Hamptons Itinerary</h2>
-          <p>This section highlights a full weekend plan, including where to go on a Friday night, what beaches to visit on Saturday, and the best brunch and activities for Sunday.</p>
-          <img src="images/featured-content.jpg" alt="Restaurant with outdoor seating on the water" width="500" height="300">
+        <section class="featured">
+          <h2 class="section-title">My Ideal 48-Hour Hamptons Itinerary</h2>
+          <p class="section-lede">This section highlights a full weekend plan, including where to go on a Friday night, what beaches to visit on Saturday, and the best brunch and activities for Sunday.</p>
+          <div class="media">
+          <img src="images/featured-content.jpg" alt="Restaurant with outdoor seating on the water" width="400" height="259">
+          </div>
         </section>
     
 
     <!-- =========================================================
     STEP 5: Two secondary content blocks + CTA section 
     ========================================================= -->
-        <section>
-          <h2>Beach Rules and Packing Tips</h2>
+        <section class="secondary">
+          <div class="secondary-grid"> 
+          <div class="card">  
+          <div class="card-text"> 
+          <h3>Beach Rules and Packing Tips</h3>
           <p>A short guide on what to bring to the beach, parking rules, and general tips for having a smooth beach day.</p>
-          <img src="images/beach-rules.jpg" alt="Beach Bag and hat by the water" width="500" height="300">
-          <p><a href="https://sociallifemagazine.com/the-archive/hamptons-beaches-complete-guide/">Learn More About Beach Tips</a></p>
-          </section>  
-
-          <section>
-          <h2>Getting There and Getting Around</h2>
+          
+          <p><a href="https://sociallifemagazine.com/the-archive/hamptons-beaches-complete-guide/" class="btn btn-outline">Learn More About Beach Tips</a></p>
+          </div>
+          <div class="card-image" style="background-image: url('images/beach-rules.jpg')"></div>
+          </div> 
+            
+          <div class="card">
+          <div class="card-text">
+        <h3>Getting There and Getting Around</h3>
           <p>Information about taking the train from NYC, driving tips, and how to get around once you are in the Hamptons.</p>
-          <img src="images/getting-there.jpg" alt="LIRR Train parked at station" width="500" height="300">
-          <p><a href="#">Learn More About Travel Options</a></p>
-          </section>
+          
+          <p><a href="#" class="btn btn-outline">Learn More About Travel Options</a></p>
+          </div>
+          <div class="card-image" style="background-image: url('images/getting-there.jpg')"></div>
+         </div> 
+        </div>
+        </section>
 
-          <section>
+          <section class="cta">
+          <div class="cta-inner container ">   
           <h2>Heard Enough?</h2>
-          <p><a href="#">View the Full Guide</a></p>
+          <p><a href="#" class="btn btn-dark">View the Full Guide</a></p>
+          </div>
           </section>
-
+          
          </main>
 
     <!-- =========================================================
     STEP 6: Footer 
     ========================================================= -->
- <footer>
+ <footer class="site-footer">
+  <div class="footer-inner container">                           
+    <div class="footer-left">                            
       <p>&copy; 2026 The Hamptons Guide</p>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Map</a></li>
-        </ul>
-      </nav>
-    </footer>
+    </div>
+    <div class="footer-cols">                       
+      <div class="footer-col">
+        <h4>Links</h4>                    
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Instagram</a>
+        <a href="#">Map</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
   </body>
